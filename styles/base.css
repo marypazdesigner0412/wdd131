@@ -38,8 +38,8 @@ body {
 
 .container span#course-title {
     display: block;
-    font-weight: 600;
-    letter-spacing: 0.4px;
+    font-weight: 650;
+    letter-spacing: 0.3px;
     font-size: 1.2rem;
 }
 
@@ -49,12 +49,6 @@ body {
     padding: 10px 0;
     text-align: center;
     box-shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.10);
-}
-
-.site-banner {
-    margin: 0;
-    font-weight: 650;
-    letter-spacing: 0.3px;
 }
 
 .top-nav {
@@ -223,8 +217,7 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 1px dashed transparent;
-    transition: color .15s ease;
-    border-color .15s ease;
+    transition: color .15s ease, border-color .15s ease;
 }
 
 .resource-list a:hover,
@@ -255,5 +248,5 @@ body {
 }
 
 .lastModified {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
