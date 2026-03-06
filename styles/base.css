@@ -65,8 +65,12 @@ body {
     justify-content: space-evenly;
     /* equally distribute space around items */
     gap: 12px;
-    padding: 10px 0;
+    padding: 10px 12px;
     flex-wrap: wrap;
+    background: var(--secondary-color);
+    border-radius: 6px;
+    max-width: min(1100px, 95%);
+    margin-inline: auto;
 }
 
 .nav-grid a {
@@ -97,7 +101,6 @@ body {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 28px;
-    /* replaced invalid list with a single value */
     font-weight: 600;
     letter-spacing: 0.3px;
 }
