@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 HERNANDEZ</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Luzmary Paz</title>
+    <meta name="WDD 131 | Dynamic Web Fundamentals - Luzmary Paz" content="">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <H1>WDD 131</H1>
+    <header class="site-banner">
+        <div class="container">
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        </div>
+    </header>
+
+    <nav class="top-nav">
+        <div class="nav-grid">
+            <a href="https://www.linkedin.com/in/luzmary-paz-07430045/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/130?lang=eng&id=p20#p20">Scripture</a>
+            <a href="#" title="Final Project folder (placeholder)">Final Project</a>
+        </div>
+    </nav>
+
+    <section class="page-title">
+        <div class="container">
+            <h1>Luzmary Paz</h1>
+        </div>
+    </section>
+
+    <main class="grid-2">
+
+        <article class="card">
+            <h2 class="about-title" id="about-title">About me</h2>
+            <div class="card-body about-grid">
+                <div class="about-text">
+                    <p>My name is Luzmary Paz and I go by Mary, I was born in Venezuela and live with my family in
+                        Paraguaná Península, Falcón State. I am currently working as Graphic Designer in Manegui Graphic
+                        Design Studio. I'm also pursuing a Professional Studies Bachelor's degree at BYU-Idaho. In my
+                        free time I love
+                        painting and playing the guitar. I love reading books and learn new things related with arts.
+                    </p>
+
+                    <section class="location">
+                        <h3>Falcón, Venezuela</h3>
+                        <div class="location-grid">
+                            <figure class="flag">
+                                <img src="images/Flag.jpg" alt="Official Flag of Venezuela">
+                                <figcaption>Official Flag of Venezuela</figcaption>
+                            </figure>
+                            <p class="location-text">
+                                Venezuela, country located at the northern end of South America. It occupies a roughly
+                                triangular area that is larger
+                                than the combined areas of France and Germany. Venezuela is bounded by the Caribbean Sea
+                                and the Atlantic Ocean to the
+                                north, Guyana to the east, Brazil to the south, and Colombia to the southwest and west.
+                                The national capital, Caracas,
+                                is Venezuela's primary centre of industry, commerce, education, and tourism..
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <figure class="profile">
+                    <img src="images/Portrait.jpg" alt="Profile portrait" width="200">
+                </figure>
+            </div>
+        </article>
+
+        <aside class="card">
+            <h2 class="card-title">Web Dev Resources</h2>
+            <div class="card-body">
+                <ul class="resource-list">
+                    <li><a href="#">Dev. to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                    <li><a href="#">Official Flag of Venezuela</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <p>©<span id="currentyear"></span> Luzmary Paz • Venezuela</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
+
 </html>
