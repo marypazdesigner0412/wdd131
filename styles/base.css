@@ -92,6 +92,8 @@ body {
 
 .page-title {
     padding: 24px 0 10px;
+    grid-column: 1 / -1;
+    /* span both columns in the parent grid */
 }
 
 .page-title h1 {

@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Luzmary Paz</title>
+    <meta name="description"
+        content="Personal homepage for Luzmary Paz in WDD 131 Dynamic Web Fundamentals class. Contains about me, resources, and project links.">
+    <meta name="author" content="Luzmary Paz">
+    <title>WDD,131,Dynamic Web Fundamentals, Luzmary Paz</title>
     <meta name="WDD 131 | Dynamic Web Fundamentals - Luzmary Paz" content="">
     <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
@@ -15,27 +17,26 @@
         <div class="container">
             <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         </div>
+        <nav class="top-nav">
+            <div class="nav-grid">
+                <a href="https://www.linkedin.com/in/luzmary-paz-07430045/">LinkedIn</a>
+                <a href="https://byupw.instructure.com/">I-Learn</a>
+                <a
+                    href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/130?lang=eng&id=p20#p20">Scripture</a>
+                <a href="#" title="Final Project folder (placeholder)">Final Project</a>
+            </div>
+        </nav>
     </header>
-
-    <nav class="top-nav">
-        <div class="nav-grid">
-            <a href="https://www.linkedin.com/in/luzmary-paz-07430045/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">I-Learn</a>
-            <a
-                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/130?lang=eng&id=p20#p20">Scripture</a>
-            <a href="#" title="Final Project folder (placeholder)">Final Project</a>
-        </div>
-    </nav>
-
-    <section class="page-title">
-        <div class="container">
-            <h1>Luzmary Paz</h1>
-        </div>
-    </section>
 
     <main class="grid-2">
 
-        <article class="card">
+        <section class="page-title">
+            <div class="container">
+                <h1>Luzmary Paz</h1>
+            </div>
+        </section>
+
+        <section class="card">
             <h2 class="about-title" id="about-title">About me</h2>
             <div class="card-body about-grid">
                 <div class="about-text">
@@ -69,9 +70,9 @@
                     <img src="images/Portrait.jpg" alt="Profile portrait" width="200">
                 </figure>
             </div>
-        </article>
+        </section>
 
-        <aside class="card">
+        <section class="card">
             <h2 class="card-title">Web Dev Resources</h2>
             <div class="card-body">
                 <ul class="resource-list">
@@ -84,7 +85,7 @@
                     <li><a href="#">Official Flag of Venezuela</a></li>
                 </ul>
             </div>
-        </aside>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -93,6 +94,7 @@
             <p id="lastModified"></p>
         </div>
     </footer>
+    <script src="./scripts/getdates.js"></script>
 </body>
 
 </html>
