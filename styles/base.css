@@ -110,6 +110,9 @@ header {
     letter-spacing: 0.3px;
 }
 
+main {
+    margin: 0;
+}
 .grid-2 {
     /*main cards*/
     display: grid;
