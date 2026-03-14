@@ -19,7 +19,7 @@ body {
     padding: 0;
     color: var(--fg);
     background: var(--bg);
-    font-family: 'Inter', 'Source Sans 3', system-ui, -apple-system, Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     
 }
 
@@ -183,4 +183,3 @@ h2 {
     #hamburger {
         display: none;
     }
-    
