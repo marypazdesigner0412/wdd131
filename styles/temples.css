@@ -111,7 +111,8 @@ h2 {
     margin: 0;
     background: #f8f9fa;
     padding: 0.5rem;
-    border-radius: 6px;
+    border-radius: 16px;
+    
 }
 
 .gallery figure:hover {
@@ -135,6 +136,7 @@ h2 {
     padding: 16px 0 px;
     margin-top: 20px;
     border-top: 2px solid rgba(255, 255, 255, 0.08);
+    
 
 }
 
@@ -143,14 +145,15 @@ h2 {
     align-self: center;
     gap: 6px;
     text-align: center;
+    
 }
 
-.site-footer p {
-        
+.site-footer p {    
     margin-block-start: 0.5em;
     margin-block-end: 0.5em;
     text-align: center;
     margin: 5px;
+    
         
 }
 
@@ -158,6 +161,7 @@ h2 {
     color: #fff;
     background-color: transparent;
     text-align: center;
+    width: 100%;
 }
 
 @media (min-width: 740px) {
