@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luzmary Paz">
+    <meta name="description" content="WDD 131 - Web Fundamentals - Luzmary Paz - Week03 Place Project">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Luzmary Paz - Week03 Place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnedt" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="https://fonts.googleapis.com/css2?family=Roboto+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Canaima, Venezuela</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-parque-nacional-canaima.webp" media="(min-width: 100px)">
+                <img src="images/hero-small-parque-nacional-canaima.webp" alt="Picture of Parque Nacional Canaima Venezuela" width="400" height="200"> 
+            </picture>
+        </div>
+        <article class="data">
+            <h2>Data</h2>
+            <p>Population:N/A Protected Area</p>
+            <p>Capital: Caracas</p>
+            <p>Languages: Spanish</p>
+            <p>Currency:VES, bolivar</p>
+            <p>Calling Code: +58</p>
+            <p>Internet TLD: .ve</p>
+        </article>
+
+        <article class="weather">
+            <h2>"Weather"</h2>
+            <span class="icon"></span>
+            <h2>
+                <img src="images/weather.svg" alt="A cloud and sun weather icon">
+                <p>Temperature: 40°F</p>
+                <p>Conditions: Heavy rains</p>
+                <p>Wind: 10 mph</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+            </h2>
+        </article>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear">©2026</span>
+            Luzmary Paz | Falcón, Venezuela
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
