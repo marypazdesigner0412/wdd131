@@ -1,6 +1,8 @@
+/* --- BASE STYLES (Mobile First) --- */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto Sans', sans-serif;
 }
 
@@ -13,17 +15,23 @@
     --gallery-text-color: #373737;
 }
 
+/* Base Layout */
 header,
 footer {
     text-align: center;
     background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1.5rem;
 }
 
 header h1 {
-    padding: 2.5rem;
-    color: var(--text-color);
-    font-weight: bold;
-    font-size: 45px;
+    font-size: 2.2rem;
+}
+
+/* Hero Container */
+.hero {
+    position: relative;
+    width: 100%;
 }
 
 .hero img {
@@ -34,77 +42,66 @@ header h1 {
     border-bottom: 1rem solid var(--secondary-color);
 }
 
+/* Article Styling (Cards) */
 article {
     padding: 1.5rem;
-    text-align: center;
+    background-color: var(--card-background);
+    color: var(--gallery-text-color);
+    /* Ensures text is visible on white */
+    margin: 1rem;
+    /* Spacing for mobile view */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.weather {
-    border-top: 1px solid var(--card-background);
+article h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+article p {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .weather img {
     width: 50px;
     height: auto;
-    padding: 12px;
+    margin: 0 auto 1rem;
+    display: block;
 }
 
-footer {
-    padding: 1.5rem;
-    border-top: 1rem solid var(--secondary-color);
-    color: var(--text-color);
-}
-
-footer p {
-    padding: 5px;
-}
-
-@media screen and (min-width: 500px) {
-
+/* --- MEDIA QUERY (Large View) --- */
+@media screen and (min-width: 768px) {
     .hero img {
         border-bottom: 0;
     }
 
-    .data {
+    .data,
+    .weather {
         position: absolute;
-        top: 200px;
-        left: 50px;
-        background-color: var(--card-background);
-        box-shadow: 0 0 25px black;
-        padding: 2rem;
+        top: 30px;
+        background-color: rgba(255, 255, 255, 0.85);
+        /* Semi-transparent for professional look */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        margin: 0;
+        /* Remove mobile margins */
+    }
+
+    .data {
+        left: 30px;
+        width: 280px;
+        text-align: left;
     }
 
     .weather {
-        position: absolute;
-        right: 50px;
-        bottom: -120px;
-        border-top: 0;
-        background-color: var(--card-background);
-        box-shadow: 0 0 25px rgb(44, 43, 43);
-        padding: 1.5rem;
-        width: 200px;
-    }
-
-    article p {
-        padding: 5px;
-    }
-
-    article h2 {
-        margin-bottom: 1rem;
-        border-bottom: 2px solid var(--primary-color);
-    }
-
-    .weather img {
-        display: none;
-    }
-
-    .icon::after {
-        content: "🌦️";
+        right: 30px;
+        width: 250px;
     }
 
     footer {
-        padding-bottom: 2rem;
+        border-top: 1rem solid var(--secondary-color);
     }
-
-
 }

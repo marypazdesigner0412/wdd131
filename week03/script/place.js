@@ -1,6 +1,8 @@
-// Current Year and Last Modified
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+const yearEl = document.getElementById("currentyear");
+const modEl = document.getElementById("lastModified");
+
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+if (modEl) modEl.textContent = `Last Modified: ${document.lastModified}`;
 
 const temp = 40; // °F
 const wind = 10; // mph
@@ -11,8 +13,10 @@ function calculateWindChill(t, s) {
 
 const chillElement = document.getElementById("windChill");
 
-if (temp <= 50 && wind > 3) {
-    chillElement.textContent = `${calculateWindChill(temp, wind)}°F`;
-} else {
-    chillElement.textContent = "N/A";
+if (chillElement) {
+    if (temp <= 50 && wind > 3) {
+        chillElement.textContent = `${calculateWindChill(temp, wind)}°F`;
+    } else {
+        chillElement.textContent = "N/A";
+    }
 }
