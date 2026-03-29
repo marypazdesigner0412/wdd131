@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luzmary Paz">
+    <meta name="description" content="WDD 131 - Web Fundamentals - Luzmary Paz - Week03 Place Project">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Luzmary Paz - Week03 Place</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300..800&display=swap" rel="stylesheet">
+
+    <script src="script/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Canaima, Venezuela</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-parque-nacional-canaima.webp" media="(min-width: 768px)">
+                <img src="images/hero-small-parque-nacional-canaima.webp"
+                    srcset="images/hero-small-parque-nacional-canaima.webp"
+                    alt="Scenic view of Angel Falls in Canaima National Park, Venezuela" width="400" height="250">
+            </picture>
+
+            <article class="data">
+                <h2>Data</h2>
+                <p>Population: <span>N/A Protected Area</span></p>
+                <p>Capital: <span>Caracas</span></p>
+                <p>Languages: <span>Spanish</span></p>
+                <p>Currency: <span>VES, bolivar</span></p>
+                <p>Calling Code: <span>+58</span></p>
+                <p>Internet TLD: <span>.ve</span></p>
+            </article>
+
+            <article class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather icon" width="50">
+                <p>Temperature: <span>40°F</span></p>
+                <p>Conditions: <span>Heavy rains</span></p>
+                <p>Wind: <span>10 mph</span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span> Luzmary Paz | Falcón, Venezuela
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
