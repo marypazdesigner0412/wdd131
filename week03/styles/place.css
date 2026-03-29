@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Sans', sans-serif;
+    /* Ensures padding doesn't break width */
+    font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -31,6 +32,7 @@ header h1 {
 /* Hero Container */
 .hero {
     position: relative;
+    /* Anchor for absolute positioning in desktop view */
     width: 100%;
 }
 
@@ -42,14 +44,12 @@ header h1 {
     border-bottom: 1rem solid var(--secondary-color);
 }
 
-/* Article Styling (Cards) */
+/* Article Styling (Cards) - Mobile View */
 article {
     padding: 1.5rem;
     background-color: var(--card-background);
     color: var(--gallery-text-color);
-    /* Ensures text is visible on white */
     margin: 1rem;
-    /* Spacing for mobile view */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -58,33 +58,42 @@ article h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 article p {
     margin: 0.5rem 0;
     display: flex;
     justify-content: space-between;
+    /* Aligns labels left and values right */
 }
 
 .weather img {
-    width: 50px;
-    height: auto;
-    margin: 0 auto 1rem;
     display: block;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 70px;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    
 }
 
-/* --- MEDIA QUERY (Large View) --- */
+/* --- MEDIA QUERY (Large View / Desktop) --- */
+/* Breakpoint at 768px is standard for tablet/desktop transitions */
 @media screen and (min-width: 768px) {
     .hero img {
         border-bottom: 0;
+        /* Clean look when cards are overlaying */
     }
 
     .data,
     .weather {
         position: absolute;
+        /* Pins cards on top of the hero image */
         top: 30px;
         background-color: rgba(255, 255, 255, 0.85);
-        /* Semi-transparent for professional look */
+        /* Semi-transparent background */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         margin: 0;
         /* Remove mobile margins */
@@ -93,7 +102,6 @@ article p {
     .data {
         left: 30px;
         width: 280px;
-        text-align: left;
     }
 
     .weather {

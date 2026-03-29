@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
     <meta name="description" content="WDD 131 - Web Fundamentals - Luzmary Paz - Week03 Place Project">
     <link rel="stylesheet" href="styles/place.css">
     <title>WDD 131 - Dynamic Web Fundamentals - Luzmary Paz - Week03 Place</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnedt" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="https://fonts.googleapis.com/css2?family=Roboto+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="script/place.js" defer></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300..800&display=swap" rel="stylesheet">
+
+    <script src="script/place.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Canaima, Venezuela</h1>
@@ -21,11 +24,12 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/hero-large-parque-nacional-canaima.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-large-parque-nacional-canaima.webp" media="(min-width: 768px)">
                 <img src="images/hero-small-parque-nacional-canaima.webp"
+                    srcset="images/hero-small-parque-nacional-canaima.webp"
                     alt="Scenic view of Angel Falls in Canaima National Park, Venezuela" width="400" height="250">
             </picture>
-        
+
             <article class="data">
                 <h2>Data</h2>
                 <p>Population: <span>N/A Protected Area</span></p>
@@ -35,7 +39,7 @@
                 <p>Calling Code: <span>+58</span></p>
                 <p>Internet TLD: <span>.ve</span></p>
             </article>
-        
+
             <article class="weather">
                 <h2>Weather</h2>
                 <img src="images/weather.svg" alt="Weather icon" width="50">
@@ -49,12 +53,12 @@
 
     <footer>
         <p>
-            <span id="currentyear">©2026</span>
-            Luzmary Paz | Falcón, Venezuela
+            <span id="currentyear"></span> Luzmary Paz | Falcón, Venezuela
         </p>
         <p>
             <span id="lastModified"></span>
         </p>
     </footer>
 </body>
+
 </html>
