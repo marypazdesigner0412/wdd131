@@ -44,7 +44,7 @@ header h1 {
     border-bottom: 1rem solid var(--secondary-color);
 }
 
-/* Article Styling (Cards) - Mobile View */
+
 article {
     padding: 1.5rem;
     background-color: var(--card-background);
@@ -65,7 +65,7 @@ article p {
     margin: 0.5rem 0;
     display: flex;
     justify-content: space-between;
-    /* Aligns labels left and values right */
+    
 }
 
 .weather img {
@@ -86,7 +86,11 @@ article p {
         border-bottom: 0;
         /* Clean look when cards are overlaying */
     }
-
+.weather h2::after {
+    content: " 🌦️";
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
     .data,
     .weather {
         position: absolute;
