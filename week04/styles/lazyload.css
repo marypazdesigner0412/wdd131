@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin: 0 auto 24px;
+    width: 400px;
+    height: auto;
+    
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+        filter: brightness(0%);
+    }
+
+    to {
+        opacity: 1;
+        filter: brightness(100%);
+    }
+}
+
+main img {
+    animation: fadeFromBlack 1.5s ease-in forwards;
+}
+
