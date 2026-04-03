@@ -77,19 +77,26 @@ const temples = [
     },
     {
         templeName: "Panama City, Panama",
-        location: "Barranquilla, Colombia",
-        dedicated: "2016, February, 20",
-        area: 25349,
+        location: "Panama City, Panama",
+        dedicated: "2008, August, 10",
+        area: 18943,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/panama-city-panama/400x250/panama-city-temple-lds-569186-wallpaper.jpg"
     },
     {
         templeName: "Sacramento, California",
         location: "Sacramento, California, United States",
-        dedicated: "2008, August, 10",
-        area: 18943,
+        dedicated: "2006, September, 3",
+        area: 19500,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-temple/sacramento-california-temple-8098-main.jpg"
     },
-    // Add more temple objects here...
+    {
+        templeName: "Bountiful, Utah",
+        location: "Bountiful, Utah, United States",
+        dedicated: "1995, January, 14",
+        area: 104000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-40955-main.jpg"
+    },
 ];
