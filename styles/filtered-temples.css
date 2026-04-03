@@ -150,7 +150,7 @@ h2 {
     color: #a09f9f;
     
 }
-figcaption p {
+.gallery figcaption p {
     margin: 0.4rem 0;
     color: #333;;
 }
