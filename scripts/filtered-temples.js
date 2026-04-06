@@ -100,3 +100,53 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/bountiful-utah-temple/bountiful-utah-temple-40955-main.jpg"
     },
 ];
+
+function createTempleCard(temple) {
+    return `<figure>
+        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" width="400" height="250" loading="lazy">
+        <figcaption>
+            <h3>${temple.templeName}</h3>
+            <p><strong>Location:</strong> ${temple.location}</p>
+            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+            <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+        </figcaption>
+    </figure>`;
+}
+
+function displayTemples(filteredTemples) {
+    const gallery = document.querySelector('.gallery');
+    gallery.innerHTML = '';
+    filteredTemples.forEach(temple => {
+        gallery.innerHTML += createTempleCard(temple);
+    });
+}
+
+function filterTemples(criteria) {
+    let filtered = temples;
+    if (criteria === 'old') {
+        filtered = temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) < 1950);
+    } else if (criteria === 'new') {
+        filtered = temples.filter(temple => parseInt(temple.dedicated.split(',')[0]) > 2000);
+    } else if (criteria === 'large') {
+        filtered = temples.filter(temple => temple.area > 50000);
+    } else if (criteria === 'small') {
+        filtered = temples.filter(temple => temple.area < 20000);
+    } else if (criteria === 'all') {
+        filtered = temples;
+    }
+    displayTemples(filtered);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayTemples(temples);
+    const navLinks = document.querySelectorAll('.nav-list a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const criteria = link.textContent.toLowerCase();
+            filterTemples(criteria === 'home' ? 'all' : criteria);
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+    });
+});
