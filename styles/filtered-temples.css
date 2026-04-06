@@ -141,21 +141,23 @@ h2 {
 .gallery figcaption {
     text-align: left;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 200;
     padding-top: 1rem;
     color: #333;
 }
-.gallery figcaption h2 {
+.gallery h2 {
+    font-size: 1rem;
     margin-bottom: 0.6rem;
     color: #a09f9f;
     
 }
-.gallery figcaption h3 {
+.gallery h3 {
+    font-size: 1rem;
     margin-bottom: 0.6rem;
     color: #2c3e50;
-    font-family: 'Playfair Display', sans-serif;
-
-
+}
+.gallery p {
+    font-size: 0.9rem;
 }
 
 .site-footer {

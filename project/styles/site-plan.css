@@ -1,0 +1,82 @@
+:root {
+    --primary-red: #D32F2F;
+    --dark-grey: #424242;
+    --black: #000000;
+    --white: #FFFFFF;
+    --light-grey: #f4f4f4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--primary-red);
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--dark-grey);
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary-red);
+    text-transform: uppercase;
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-box {
+    padding: 20px;
+    color: white;
+    flex: 1;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.wireframe-box {
+    background-color: var(--light-grey);
+    border: 2px dashed var(--dark-grey);
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--dark-grey);
+}
+
+@media (max-width: 600px) {
+    .wireframe-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
