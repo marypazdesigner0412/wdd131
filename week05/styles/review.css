@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #f1c40f;
+    --text-color: #333;
+    --bg-color: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.confirmation-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.counter-box {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border: 1px dashed #cbd5e0;
+    border-radius: 8px;
+}
+
+.count-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+}
+
+.site-footer {
+    background-color: var(--primary-color);
+    color: #ecf0f1;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.footer-grid p {
+    margin: 5px 0;
+}
