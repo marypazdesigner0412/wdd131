@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals | W05 Assignment: Product Review Form">
+    <meta name="author" content="Luzmary Paz">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -25,12 +27,22 @@
 
             <fieldset>
                 <legend>Overall Rating</legend>
-                <div class="rating-container">
-                    <label><input type="radio" name="rating" value="1" required> 1</label>
-                    <label><input type="radio" name="rating" value="2" required> 2</label>
-                    <label><input type="radio" name="rating" value="3" required> 3</label>
-                    <label><input type="radio" name="rating" value="4" required> 4</label>
-                    <label><input type="radio" name="rating" value="5" required> 5</label>
+                <div class="rating-group">
+                    <label for="rating1">
+                        <input type="radio" id="rating1" name="rating" value="1" required> 1
+                    </label>
+                    <label for="rating2">
+                        <input type="radio" id="rating2" name="rating" value="2" required> 2
+                    </label>
+                    <label for="rating3">
+                        <input type="radio" id="rating3" name="rating" value="3" required> 3
+                    </label>
+                    <label for="rating4">
+                        <input type="radio" id="rating4" name="rating" value="4" required> 4
+                    </label>
+                    <label for="rating5">
+                        <input type="radio" id="rating5" name="rating" value="5" required> 5
+                    </label>
                 </div>
             </fieldset>
 
@@ -42,10 +54,17 @@
             <fieldset>
                 <legend>Which features did you find useful?</legend>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <input type="checkbox" id="feat-durability" name="features" value="durability">
+                    <label for="feat-durability">Durability</label>
+            
+                    <input type="checkbox" id="feat-ease" name="features" value="ease">
+                    <label for="feat-ease">Ease of Use</label>
+            
+                    <input type="checkbox" id="feat-performance" name="features" value="performance">
+                    <label for="feat-performance">Performance</label>
+            
+                    <input type="checkbox" id="feat-design" name="features" value="design">
+                    <label for="feat-design">Design</label>
                 </div>
             </fieldset>
 
