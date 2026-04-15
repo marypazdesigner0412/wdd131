@@ -1,0 +1,431 @@
+/* --- CSS VARIABLES & RESET --- */
+:root {
+    --primary-red: #D32F2F;
+    /* Main Brand Color */
+    --dark-grey: #424242;
+    /* Headings/Borders */
+    --black: #000000;
+    /* Navigation Background */
+    --white: #FFFFFF;
+    /* Page Background */
+    --light-grey: #F4F4F4;
+    /* Section backgrounds */
+    --text-color: #212121;
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/* --- LAYOUT --- */
+header {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem 0;
+    border-bottom: 4px solid var(--primary-red);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+.center-header {
+    justify-content: center !important;
+}
+
+#menu-button {
+    display: none;
+    /* Hidden on desktop */
+    font-size: 2.2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+    /* Stays above the menu */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+
+/* --- NAVIGATION --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--primary-red);
+}
+
+.active {
+    color: var(--primary-red) !important;
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    margin-bottom: 1.5rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* --- CATALOG GRID & CARDS --- */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+/* Container for the About section */
+.about-history {
+    padding: 2rem 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-history h2 {
+    text-align: center;
+    color: var(--primary-red);
+    margin-bottom: 2rem;
+}
+
+/* Side-by-side layout for desktop */
+.about-flex {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+/* Each side takes up equal space */
+.about-text,
+.about-image {
+    flex: 1 1 400px;
+    /* Grow, shrink, and basis of 400px */
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+/* Image styling */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-image figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+    color: #555;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.part-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.part-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.part-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card-info h3 {
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.category {
+    font-size: 0.8rem;
+    color: var(--primary-red);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+/* --- FILTER BUTTONS --- */
+.filter-controls {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-controls button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: var(--dark-grey);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.filter-controls button:hover {
+    background-color: var(--primary-red);
+}
+
+/* --- FORM STYLING --- */
+.part-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--light-grey);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.part-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.part-form input,
+.part-form select,
+.part-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.category-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-bottom: 15px;
+    background-color: var(--white);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: scale(1.03);
+}
+
+.category-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.category-card h3 {
+    margin-top: 10px;
+    color: var(--dark-grey);
+}
+
+.part-card {
+    background-color: #FFFFFF;
+    border: 1 px solid #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.part-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 8px 8px 0 0;
+    display: block;
+}
+
+.grid-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+}
+
+.inquire-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.inquire-btn:hover {
+    background-color: #b71c1c;
+    /
+}
+
+/* --- FOOTER --- */
+footer {
+    padding: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    border-top: 4px solid var(--primary-red);
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+        /* Prevents "Auto Partes Pepe" from stacking in 3 lines */
+    }
+
+    #menu-button {
+        display: block;
+        /* Shows the hamburger only on mobile */
+    }
+
+    #nav-list {
+        display: none;
+        /* Hides the menu links initially */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--black);
+        padding: 1rem 0;
+        list-style: none;
+        z-index: 1000;
+    }
+    
+    #nav-list.open {
+        display: flex;
+    }
+
+    #nav-list li {
+        text-align: center;
+        margin: 15px 0;
+    }
+}

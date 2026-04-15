@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Request a specific automotive electrical part from our specialized team in Falcón.">
+    <title>Request Part | Auto Partes Pepe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Auto Partes Pepe</h1>
+            <button id="menu-button" aria-label="Open Menu">&#9776;</button>
+            <nav>
+            <ul id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Request Part</a></li>
+            </ul>
+            </nav>
+            </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Part Inquiry Form</h2>
+            <form action="thanks.html" method="get" class="part-form">
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="user-name" required>
+
+                <label for="part-type">Part Category:</label>
+                <select id="part-type" name="part-type">
+                    <option value="starter">Starter</option>
+                    <option value="alternator">Alternator</option>
+                    <option value="sensor">Sensor</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="description">Vehicle Details (Year/Make/Model):</label>
+                <textarea id="description" name="description" rows="5" required></textarea>
+
+                <input type="submit" value="Submit Request" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Auto Partes Pepe | Luzmary Paz | Falcón, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

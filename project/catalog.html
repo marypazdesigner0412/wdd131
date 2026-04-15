@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our extensive catalog of automotive electrical parts, including high-output alternators and heavy-duty starters.">
+    <title>Catalog | Auto Partes Pepe</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/catalog.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Auto Partes Pepe</h1>
+            <button id="menu-button" aria-label="Open Menu">&#9776;</button>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html" class="active">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Request Part</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="catalog-intro">
+            <h2>Our Parts Catalog</h2>
+            <p>Filter by category to find the specific component you need.</p>
+            <div class="filter-controls">
+                <button id="all">All</button>
+                <button id="starters">Starters</button>
+                <button id="alternators">Alternators</button>
+            </div>
+        </section>
+
+        <div id="catalog-container" class="grid-display"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Auto Partes Pepe | Luzmary Paz | Falcón, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

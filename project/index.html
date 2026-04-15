@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Auto Partes Pepe, your three-generation specialized shop for alternators and starters in Falcón.">
+    <meta name="author" content="Luzmary Paz">
+    <title>Home | Auto Partes Pepe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div id="welcome-message"></div>
+    <header>
+        <div class="header-container">
+            <h1>Auto Partes Pepe</h1>
+            <button id="menu-button" aria-label="Open Menu">&#9776;</button>
+            <nav>
+                <ul id="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Request Part</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Precision Power for Every Vehicle</h2>
+                <p>Specializing in Starters, Alternators, and Sensors.</p>
+                <a href="catalog.html" class="cta-button">View Catalog</a>
+            </div>
+        </section>
+
+        <section id="featured-categories">
+            <h2>Our Specialties</h2>
+            <div class="category-grid">
+                <article class="category-card">
+                    <img src="images/starter_1.webp" alt="Automotive Starters" loading="lazy">
+                    <h3>Starters</h3>
+                </article>
+                <article class="category-card">
+                    <img src="images/alternator.webp" alt="High Output Alternators" loading="lazy">
+                    <h3>Alternators</h3>
+                </article>
+                <article class="category-card">
+                    <img src="images/sensor.webp" alt="Engine Sensors" loading="lazy">
+                    <h3>Sensors</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Auto Partes Pepe | Luzmary Paz | Falcón, Venezuela</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
